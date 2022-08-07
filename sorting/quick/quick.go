@@ -23,7 +23,7 @@ func QuickSort(arr []int) []int {
 	// Find pivot
 	pivotidx := rand.Int() % len(arr)
 	pivot := arr[pivotidx]
-	//move pivot to the right of the array
+	//move element at pivot to the right of the array
 	arr[pivotidx], arr[right] = arr[right], arr[pivotidx]
 
 	// Scoop all smaller elements to the left of the pivot
