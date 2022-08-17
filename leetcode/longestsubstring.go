@@ -14,7 +14,7 @@ func lengthOfLongestSubstring(s string) int {
 
 		// If a repeating character is found stop and update start pointer
 		if _, ok := m[s[end]]; ok {
-			start = max(start, m[s[end]]+1)
+			start = max(start, m[s[end]]+1) //slide the window by one from prvious repetition
 		}
 		//if not found , update map
 		m[s[end]] = end
