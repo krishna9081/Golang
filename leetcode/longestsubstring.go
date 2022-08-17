@@ -19,7 +19,7 @@ func lengthOfLongestSubstring(s string) int {
 		//if not found , update map
 		m[s[end]] = end
 		maxLen = max(maxLen, end-start+1)
-		end++
+		end++ // we're incrementing end pointer  at the end of loop
 	}
 	return maxLen
 }
