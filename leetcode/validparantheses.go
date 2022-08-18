@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 func minRemoveToMakeValid(s string) string {
-
+	//Declaring a Slice
 	stack := []int{}
-
+	//Iterating over slice
 	for i := 0; i < len(s); i++ {
-
+		// String check ...Should be single quotes
 		if s[i] == '(' {
+			//appened method is different from Python
 			stack = append(stack, i)
 		} else if s[i] == ')' && len(stack) != 0 {
 			stack = stack[:len(stack)-1]
