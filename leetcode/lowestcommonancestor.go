@@ -8,6 +8,7 @@
  * }
  */
 
+// O(h) order of height
 func lowestCommonAncestor(p *Node, q *Node) *Node {
 
 	pDepth := getDepth(p)
