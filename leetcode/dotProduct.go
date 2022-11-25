@@ -1,3 +1,5 @@
+//Have to change this with Linked list
+
 type SparseVector struct {
 	nonZeros map[int]int
 }
